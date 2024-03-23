@@ -25,7 +25,9 @@ const product_schema = new mongoose.Schema({
     },
     ProductStoreCode:{
         type:String,
-        required:true
+        required:true,
+    
+        
     }
     
 });
