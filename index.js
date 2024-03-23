@@ -13,5 +13,5 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-const productrouter = require("./src/routes/product.routes");
-app.use("/product",productrouter); 
+const userrouter = require("./src/routes/user.routes");
+app.use("/user",userrouter); 
