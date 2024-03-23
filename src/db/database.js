@@ -1,5 +1,6 @@
 const server = "mongodb://127.0.0.1:27017"
 const db_name = "exem";
+const { error } = require("console");
 const mongoose = require("mongoose");
 class Database{
     constructor(){
@@ -10,8 +11,8 @@ class Database{
         .then(()=>{
             console.log(`Connected database ${db_name}`);
         })
-        .catch(err=>{
-            console.log(err); 
+        .catch(error=>{
+            console.log(error); 
         });
     }
 }
