@@ -3,7 +3,7 @@ const db_name = "exem";
 const mongoose = require("mongoose");
 class Database{
     constructor(){
-        this._connect();
+        this._connectt();
     }
     _connect(){
         mongoose.connect(`${server}/${db_name}`)
@@ -15,4 +15,4 @@ class Database{
         });
     }
 }
-module.exports = new Database();;
+module.exports = new Database();
